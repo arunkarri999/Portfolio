@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Borg';
+  src: url('./fonts/Borg.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+div.fill-backround{
+  opacity: 0.9;
+  background: #9ad3de; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(170deg, #9ad3de 60% , #89bdd3); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(170deg,#9ad3de 60%, #89bdd3 ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(170deg, #9ad3de 60%, #89bdd3 ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(170deg, #9ad3de 60%, #89bdd3 ); /* Standard syntax (must be last) */;
+ height: 420px;
+ width: 100%;
+ animation-name: fadeLoad;
+ animation-duration: 1s;
+ animation-timing-function: linear;
+
+ -moz-box-shadow: 1px 0px 3px rgba(0,0,0,.5);
+ -webkit-box-shadow: 1px 0px 3px rgba(0,0,0,.5);
+ box-shadow: 1px 0px 3px rgba(0,0,0,.5);
+}
+div.picture-holder{
+height: 250px;
+width: 250px;
+left: 0px;
+margin: auto;
+margin-left: 0px;
+border-radius: 50%;
+border-style: solid;
+border-width: 2px;
+border-color: #FF6600;
+-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+div.picture-holder:hover{
+  border-width: 1px;
+  -webkit-transition: border-width 300ms ease-in;
+  transition: border-width 300ms ease-in;
+}
+img.profile-image{
+  width:100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+div.hero-main{
+  margin-top: 100px;
+  margin-left: 200px;
+  position: absolute;
+  width: 85%;
+  height: 300px;
+  display: inline-block;
+
+}
+
+hr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+  width: 80%;
+}
+div.message{
+  text-align: center;
+  margin-top: -254px;
+
+
+}
+div.divider{
+  text-align: center;
+
+}
+.head-divider {
+
+  position: relative;
+  font-family: 'Borg', Fallback, sans-serif;
+	font-size: 50px;
+	letter-spacing: 5px;
+}
+div.divider-bars{
+  margin-left: 30%;
+}
+
+.head-message {
+  text-align: center;
+  position: relative;
+  font-family: 'Borg', Fallback, sans-serif;
+	font-size: 70px;
+	letter-spacing: 5px;
+	color: rgba(0,0,255,0.5);
+}
+
+.head-message:after {
+	position: absolute; left: 7px; top: 5px;
+	color: rgba(255,0,0,0.5);
+}
+
+div.divider-bars{
+  height: 20px;
+  width: 100px;
+  color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5%;
+  border-color: #FF6600;
+}
+
+
+
+@keyframes fadeLoad {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  40% {
+    opacity: 0.6;
+    transform: translate3d(0, -60%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.shadow {
+  color: white;
+
+  text-shadow: 1px 1px #fe4902,
+               2px 2px #fe4902,
+               3px 3px #fe4902;
+}

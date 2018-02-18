@@ -1,0 +1,68 @@
+*{
+    font-family: 'Alegreya Sans SC';
+    font-size: 22px;
+}
+.container{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  margin : auto;
+  margin-top : 2px;
+  align-content: center;
+  transition: all 0.1s ease-in;
+  max-width: 1200px;
+}
+
+.overlay{
+  opacity:1;
+  background-color:#5C482B;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  z-index:-1;
+}
+#main{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+*{
+  animation-name: zoomInUp;
+  animation-duration: .4s;
+  animation-timing-function: ease-in;
+
+}
+
+@keyframes zoomInUp {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+div.outer-box {
+  border-style: solid;
+  border-width: 5px;
+}
+
+
+head{
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.backgound-white{
+
+  background-color: white;
+}
